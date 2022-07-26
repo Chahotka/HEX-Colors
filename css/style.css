@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Comfortaa";
+}
+
+.container {
+  border: 1px solid #000;
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex__colors {
+  text-align: center;
+}
+.hex__title {
+  font-size: 2rem;
+  -webkit-animation: colorchange 10s infinite alternate;
+          animation: colorchange 10s infinite alternate;
+  text-transform: uppercase;
+}
+.hex__desc {
+  margin: 15% 0 0 0;
+  font-size: 2rem;
+  border: 1px solid #000;
+}
+@-webkit-keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+@media (max-width: 480px) {
+  .hex__title {
+    font-size: 1.5rem;
+  }
+  .hex__desc {
+    font-size: 1.5rem;
+  }
+}

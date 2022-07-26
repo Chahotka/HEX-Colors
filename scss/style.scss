@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import "null.scss";
+
+
+//////////////////////===============================//////////////////////
+body {
+    font-family: 'Comfortaa';
+}
+.container {
+    border: 1px solid #000;
+    margin: 0 auto;
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex {
+
+    &__colors {
+
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        animation: colorchange 10s infinite alternate;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        margin: 15% 0 0 0;
+        font-size: 2rem;
+        border: 1px solid #000;
+    }
+
+    &__number {
+    }
+
+    &__button {
+    }
+}
+
+@keyframes colorchange{
+    0% {
+        color: indigo;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: yellow;
+    }
+    80% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@media (max-width:480px) {
+    .hex {
+
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__desc {
+            font-size: 1.5rem;
+        }
+    }
+}
